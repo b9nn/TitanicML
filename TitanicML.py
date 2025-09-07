@@ -62,7 +62,6 @@ roc_auc = auc(falsep_rate, truep_rate) # auc gives overall deiscriminative abili
 # plotting roc and auc
 plt.figure(figsize=(6, 4))
 plt.plot(falsep_rate, truep_rate, label=f'AUC = {roc_auc:.2f}', color='blue')
-plt.plot([0,1], [0,1], 'k--')
 plt.xlabel('False Positive Rate')
 plt.ylabel('True Positive Rate')
 plt.title('ROC Curve')
